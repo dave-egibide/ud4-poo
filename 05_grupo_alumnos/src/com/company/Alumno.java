@@ -1,9 +1,15 @@
 package com.company;
 
 public class Alumno {
-    String nombre, apellido, dni, telefono;
+    private String nombre, apellido, dni, telefono;
+    private Grupo grupo;
 
-    public Alumno() {
+    public void setGrupo(Grupo grupo) {
+        this.grupo = grupo;
+    }
+
+    public Grupo getGrupo() {
+        return grupo;
     }
 
     public void setNombre(String nombre) {
